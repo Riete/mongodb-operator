@@ -16,7 +16,7 @@ operator-sdk build <IMAGE>:<tag>
 ### deploy operator
 
 ```
-kubectl apply -f deploy/crds/middleware.io_redisclusters_crd.yaml
+kubectl apply -f deploy/crds/middleware.io_mongodbs_crd.yaml
 kubectl apply -f deploy/namespace.yaml
 kubectl apply -f deploy/role.yaml
 kubectl apply -f deploy/service_account.yaml
@@ -26,5 +26,5 @@ kubectl apply -f deploy/operator.yaml # replace image
 
 ### deploy redis-cluster
 ```
-kubectl apply -f deploy/crds/middleware.io_v1alpha1_rediscluster_cr.yaml
+kubectl apply -f deploy/crds/middleware.io_v1alpha1_mongodb_cr.yaml
 ```
