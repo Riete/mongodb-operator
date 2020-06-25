@@ -1,0 +1,27 @@
+apiVersion: middleware.io/v1alpha1
+kind: MongoDB
+metadata:
+  name: example-mongodb
+spec:
+  # Add fields here
+  # mongodb image tag version
+  tag: 4.0.4
+  resources:
+    requests:
+      cpu: 100m
+      memory: 200Mi
+    limits:
+      cpu: 100m
+      memory: 200Mi
+  # create root user
+  rootUser: root
+  rootPwd: Bangdao01
+  # ReplicaSet or Standalone
+  mode: ReplicaSet
+  # replicaset num, for standalone only run 1 instance
+  members: 3
+  # enable auth, if enable storageClass and storageSize is required
+  authEnabled: true
+  # storage, optional if authEnabled is false
+  storageClass: alicoud-nas
+  storageSize: 5Gi
