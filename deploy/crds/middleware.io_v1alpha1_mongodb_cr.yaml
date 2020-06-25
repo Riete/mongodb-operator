@@ -1,7 +1,8 @@
 apiVersion: middleware.io/v1alpha1
 kind: MongoDB
 metadata:
-  name: example-mongodb
+  name: mongodb
+  namespace: ops-middleware
 spec:
   # Add fields here
   # mongodb image tag version

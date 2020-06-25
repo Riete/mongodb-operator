@@ -2,9 +2,11 @@ kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
   name: mongodb-operator
+  namespace: ops-middleware
 subjects:
 - kind: ServiceAccount
   name: mongodb-operator
+  namespace: ops-middleware
 roleRef:
   kind: Role
   name: mongodb-operator
