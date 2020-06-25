@@ -1,7 +1,7 @@
 apiVersion: middleware.io/v1alpha1
 kind: MongoDB
 metadata:
-  name: mongodb
+  name: mongodb-replica-set
   namespace: ops-middleware
 spec:
   # Add fields here
